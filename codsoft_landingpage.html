@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>CSS Project </title>
+
+    <style>
+
+        header{
+            width: 100%;
+            height: 100vh;
+            font-family: DM Sans;
+            background: url('https://wallpapercave.com/wp/wp10992174.png');
+            background-size: cover;
+           
+        }
+        nav{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+        
+        
+        }
+
+        .logo{
+            color:#072665 ;
+            font-size: 2em;
+            letter-spacing: 1px;
+            
+            
+        }
+        .menu{
+            font-size: x-large;
+            letter-spacing: 1.5x;
+            word-spacing: 33px;
+            border-radius: 8px; 
+            margin-right: 0px; 
+                   
+        }
+
+        .menu a::before{
+            text-decoration: none;
+            background: white;
+            color: #232528;
+            padding: 10px 20px;
+            letter-spacing: 1px;
+            border-radius: 8px ;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-bottom: 2px #b81654;
+            transition: 0.4s;
+        }
+        .menu a:hover{
+            width: 90%;
+        }
+        h3{
+            color: black;
+            text-align: left ;
+            width: 20px;
+            text-align: right;
+            border: 200px;
+    
+        }
+        
+        p{
+            margin: 0px;
+            color: #d63163;
+            font-size: 20px;
+            margin-left: 38px;
+        }
+        .main-header{
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 7%;
+            text-align: center;
+            color: white;
+        
+        }
+        .main-header span{
+                font-size: xx-large;
+                letter-spacing: 0px;
+        }
+        .main-header h4{
+            font-size: large;
+        }
+        .main-header a{
+            text-decoration: none;
+            background: white;
+            color: #072665;
+            padding: 10px 20px;
+            letter-spacing: 1px;
+            border-radius: 60px ;
+        }
+        .main-header a:hover{
+            filter: grayscale(0);
+	        transform: scale(1.3) rotate(3deg);
+            
+        }
+        footer{
+            background-color: white;
+            color: #072665;
+            text-align: justify;
+            font-size: larger;
+            font-family: DS sans-serif;
+        }
+        .info{
+            margin-left: 2px;
+
+
+        }
+        .Media{
+            color: #072665;
+            font-family: DM Sans;
+            text-align: right;
+            margin-right: 20px;
+            border-radius: 2pxs;
+        }
+
+        .Media img{
+            height: 40px;
+            border-radius: 20px;
+            margin-right: 43px;
+        }
+        
+        
+</style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="download.jpg" height="30px" >
+                CodSoft
+                <br>
+                <p>Code.Create.Suceed</p>
+            </div>
+            
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="https://www.codsoft.in/services">Services</a>
+                <a href="https://www.codsoft.in/products">Products</a>
+                <a href="https://www.codsoft.in/internships">Internships</a>
+                <a href="https://www.codsoft.in/jobs">Jobs</a>
+                <a href="https://www.codsoft.in/about-us">AboutUs</a>
+            </div>
+        </nav>
+        <section class="main-header">
+            <span>Take Your Career to the Next Level with CodSoft</span>
+            <h4>Join Our Exciting Internship Journey</h4>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd9wZJpC7Q_T3VcxOQ7YRACFcor6N-psh060RrIwZb7tGBBvw/viewform">Apply</a>
+        </section>
+        
+    </header>
+
+    <footer>
+        <nav>
+        <div class="info">
+            <b>Find Us Here</b>
+            <br>
+            Lokenath bose garden lane Kolkata,West Bengal 
+            <br>
+            <b>Email Us</b>
+            <br>
+            contact@codsoft.in
+
+        </div>
+
+        <div class="Media">
+            <span><b>Follow Us</b></span>
+            <br>
+            
+            <a href="https://www.instagram.com/codsoft_official/" >
+            <img src="data:image/jpeg;base64,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" > 
+
+            </a>
+            <br><a href="https://www.linkedin.com/company/codsoft/">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEUKZsL///8AZME7eMgAWb7i6fUAXL/Az+oAYsFjj9B1m9QAYMBGgswAVr0AXb8AWr5ZjdBWh80ZbMTO3PCzx+drl9T2+f2Ssd7G1u0dbsXF1e3w9fs2dsfl7ffV4fIocsaApNmowOSMrNyrw+Wbt+AAUryFqNr2AL+0AAADz0lEQVR4nO3ca1+qMACAcZiA5ATMW+a98vT9P+LROkXiNruMLXae/2v1xyOy6QCjCAAAAAAAAAAAAAAAAAAAALBGnPjeiPbkZSJ36/W4qmSQlbIYTTfxyXx72CXBNYpkv4o/mAwDayx7m7hhWoWUWM2afUebcTiJ5UAReDweo1AS5VAZeNyLgXxQhZxrCo/Hou+NsyJ70AXGcS+EnSgifWC8SHxvngXyzlAYhzCeJqmp8FH63r4fE8IUGC+6P9YI3VTxatP9AzFXz/bvCt8b+GNyT2HX5aov3UEVip4xMO3+SBNlxsJp6Xv7fq5amApn3Z/xzQfivAzgW1tUrPSFDwF8SM1zfiDLisUk5KPwREjN5/QpgKnilbhXrmP0uz/bvxPR9jLwEFDgacm7+Ut/c5v53ijLSvHw4WhMB0Xue4usE2U1vOtv03Qy3e+S8PpeCJlVSZKVgcyCAIDfT+SyrI6Ok0+As4+QVbGbHabLxWTRf7qb7YrMa6XIdZpbpX3k2QPzSuyXjV8rk8dd4i1SjG90bs+3SQx1D7yvH5gnt0vlr830ufK06mNYMW2cl8nUm370/laIYmQ4W3covSwaGAob68FZ/1phudOuiLyYDwoPu9FeoSiejX0nE+H+Z4u1QiHNO/DVfOh8hdJWYT42LLx+NHN9XtlSoVxrL8tpGjheILFTqFmvU7txO6RaKZT5Jz+ir9xeiWSl8M9nBpnayunVqzYKh9eniXNTl8vpVvbhFwOP74nDadFG4RdGmbeXdriibqPwG2budqKnQofXQHgqjIfOhlNfhX1nX958FcaZq53ordDZOXRvhVNXX8DtF87TNP3EDLlyNZpaLlwOxkWSJIWYXX20q4vIrRY+jat/S4tCVmPjBWXuDkSLhave2V02ojDeBxAfHK1n2CvcZs1vYhcXQJxZOhpqrBWqvofpr7fSPOE3F84vTgKcXvze9AxHvy9sFY6U40Zleo6jMxmWChfqHWK8n8PRdGGpULe4lBiWqHZdKtzqRg3TkxwtudkpfNbN3tKwSNWpQu0hJQyrVF0q3GgHftPNcV0qXOp/sBdhFBou6jcMpl0qNNxrmlz8XUMnC/fBFw7067uGG40ptITCGoVqFLaPwhqFahS2j8IahWoUto/CGoVqFLaPwhqFahS2j8IahWoUto/CGoVqFLaPwhqFahS2j8IahWoUto/CGoVqFLaPwlqAhc1/4NHfx2Qq9H7lXhT1dNaNf1HqDc/djt4YrroXa+3rtx1Wb4PWlQfq/zPrWy8PAAAAAAAAAAAAAAAAAAAA4D/0F5lQSZ+5G/qbAAAAAElFTkSuQmCC">
+            </a>
+            <br><a href="https://t.me/codsoftt">
+                <img src="data:image/png;base64,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">
+            </a>
+
+        </div>
+        </nav>
+    </footer>
+    
+
+
+</body>
+    <html>
