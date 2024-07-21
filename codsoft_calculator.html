@@ -1,190 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CALCULATOR</title>
+<html> 
+ <head> 
+  <title>Calculator</title> 
+
     <style>
-        html{
-           
-               
-               background: url(https://c4.wallpaperflare.com/wallpaper/898/764/21/abstract-mathematics-wireframe-digital-art-wallpaper-preview.jpg);
-               height: 100vh;
-               width: 100%;
-               display: block;               
-               box-sizing: border-box;
-               font-family: sans-serif;
-               background-size: cover;
-           }
-           header{
-            color: white;
-            
-            font-size: x-large;
-            font-family: 'Segoe UI';
-            text-align: center;
-            
-           }
-
-           section{
-            text-align: center;
-            font-size: large;
-            font-family: 'Segoe UI';
-            word-spacing: 4px;
-            
-           }
-
-           .background{
-            color: white;
-            border: dashed;
-            border-width: 2px 4px;
-            border-radius: 40px;
-            padding: 60px;
-            border-radius: 106px;
-            background: transparent;
-            margin-top: 3%;
-           
-            margin-left: 50px;
-            margin-right: 550px;
-            
-            
-           }
-
-        input{
-            width: 100%;
-            border: none;
-            padding: 24px;
-            margin: 10px;
-            background: white;
-            background-size: cover;
-            
-            text-align: right;
-            cursor: pointer;
-             border: solid 10px;
-            border-radius: 10px 40px 40px 10px;
-        }
-
-        input::placeholder{
-            color: black;
-            font-size: x-large;
-            margin-right: 230px;
-        }
-
-        button{
-            border: none;
-            
-            margin: 10px;
-            border-radius: 60%;
-            background: transparent;
-            color: white;
-            font-size: 25px;
-            box-shadow: -8px -8px 15px rgba(255,255,255,0.6);
-            cursor: pointer;
-        }
-        .equal{
-            background-color: orangered;
-        }
-        .plus{
-            color: deeppink;
-
-        }
-        .minus{
-            color: greenyellow;
-
-        }
-        .multiply{
-            color:coral;
-        }
-        .divide{
-            color: brown;
-        }
-        
+            body{
+                background-image: url("cal\ back.jpg") ;
+                background-size: cover;
+                color: white;
+                
+                margin-left: 380px;
+                margin-top: 180px;
+                letter-spacing: 3px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: larger;
+            }
     </style>
-</head>
-<body>
-    <header>
-        CALCULATOR Using HTML, CSS, JavaScript
-    </header>
-
-    <section>
-        <div class="background">
-            <input type="text" placeholder="0" id="result">
-        <div class="first">
-            
-            <button>AC</button>
-            <button>DEL</button>
-            <button>%</button>
-            <button class="divide">/</button>
-        </div>
-        <div>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="multiply">*</button>
-        </div>
-        <div>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button class="minus">-</button>
-        </div>
-        <div>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="plus">+</button>
-        </div>
-        <div>
-            <button>00</button>
-            <button>0</button>
-            <button>.</button>
-            <button class="equal">=</button>
-        </div>
-
-        </div>
-
-    </section>
-    <script> 
-            function dis(val) { 
-			document.getElementById("result").value += val 
-		} 
-
-		function myFunction(event) { 
-			if (event.key == '0' || event.key == '1' 
-				|| event.key == '2' || event.key == '3' 
-				|| event.key == '4' || event.key == '5' 
-				|| event.key == '6' || event.key == '7' 
-				|| event.key == '8' || event.key == '9' 
-				|| event.key == '+' || event.key == '-' 
-				|| event.key == '*' || event.key == '/') 
-				document.getElementById("result").value += event.key; 
-		} 
-
-		var cal = document.getElementById("background"); 
-		cal.onkeyup = function (event) { 
-			if (event.keyCode === 13) { 
-				console.log("Enter"); 
-				let x = document.getElementById("result").value 
-				console.log(x); 
-				solve(); 
-			} 
-		} 
-
-		
-		function solve() { 
-			let x = document.getElementById("result").value 
-			let y = math.evaluate(x) 
-			document.getElementById("result").value = y 
-		} 
-
-		
-		function clr() { 
-			document.getElementById("result").value = "" 
-		}
-    
-    
-    
-    </script>
-    
-    
-</body>
-</html>
+   <script> 
+ function insert(num) { 
+ document.form.textview.value = document.form.textview.value + num; 
+ } 
+ function clean() { 
+ document.form.textview.value = ""; 
+ } 
+ function back() { 
+ var exp = document.form.textview.value; 
+ document.form.textview.value = exp.substring(0, exp.length - 1); 
+ } 
+ function equal() { 
+ var exp = document.form.textview.value; 
+ if (exp) { 
+ document.form.textview.value = eval(exp); 
+ } 
+ } 
+  </script> 
+ </head> 
+ <body> 
+ <h3>Calculator</h3> 
+ <form name="form"> 
+ <input type="text" name="textview" /> 
+ <br /> 
+ <input type="button" value="C" onclick="clean()" /> 
+ <input type="button" value="&larr;" onclick="back()" /> 
+ <input type="button" value="/" onclick="insert('/')" /> 
+ <input type="button" value="*" onclick="insert('*')" /> 
+ <br /> 
+ <input type="button" value="7" onclick="insert('7')" /> 
+ <input type="button" value="8" onclick="insert('8')" /> 
+ <input type="button" value="9" onclick="insert('9')" /> 
+ <input type="button" value="-" onclick="insert('-')" /> 
+ <br /> 
+ <input type="button" value="4" onclick="insert('4')" /> 
+ <input type="button" value="5" onclick="insert('5')" /> 
+ <input type="button" value="6" onclick="insert('6')" /> 
+ <input type="button" value="+" onclick="insert('+')" /> 
+ <br /> 
+ <input type="button" value="1" onclick="insert('1')" /> 
+ <input type="button" value="2" onclick="insert('2')" /> 
+ <input type="button" value="3" onclick="insert('3')" /> 
+ <input type="button" value="=" onclick="equal()" /> 
+ <br /> 
+ <input type="button" value="0" onclick="insert('0')" /> 
+ <input type="button" value="." onclick="insert('.')" /> 
+ </form> 
+ </body> 
+</html> 
