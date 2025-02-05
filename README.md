@@ -1,2 +1,2 @@
 # codsoft_-._3
-I have completed level 1 of internship task assigned to me.
+"Excited to have completed a rewarding one-month internship as a web developer at CodSoft! 🌟 Grateful for the opportunity to learn and grow while contributing to innovative projects. Looking forward to applying these new skills in future endeavors! 
